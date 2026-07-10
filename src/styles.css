@@ -152,6 +152,7 @@ h3 {
   font-family: "Sora", "Poppins", system-ui, sans-serif;
   letter-spacing: 0;
   line-height: 1.02;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -433,6 +434,7 @@ p {
 
 .hero__visual {
   min-width: 0;
+  width: 100%;
 }
 
 .portrait-frame {
@@ -1273,6 +1275,7 @@ blockquote {
   gap: 8px;
   color: var(--primary-dark);
   font-weight: 900;
+  overflow-wrap: anywhere;
 }
 
 .project-page {
@@ -1468,6 +1471,24 @@ blockquote {
   }
 }
 
+@media (min-width: 1440px) {
+  .container {
+    width: min(100% - 80px, 1320px);
+  }
+
+  .site-header__inner {
+    width: min(100% - 80px, 1360px);
+  }
+
+  .featured-grid {
+    grid-auto-rows: 260px;
+  }
+
+  .portrait-frame {
+    min-height: 660px;
+  }
+}
+
 @media (max-width: 1180px) {
   .desktop-nav {
     gap: 14px;
@@ -1489,6 +1510,10 @@ blockquote {
 
   h2 {
     font-size: 2.8rem;
+  }
+
+  .project-hero__copy h1 {
+    font-size: 3.7rem;
   }
 
   .services-grid {
@@ -1517,6 +1542,8 @@ blockquote {
 
   .hero {
     align-items: flex-start;
+    min-height: auto;
+    padding-bottom: 72px;
   }
 
   .hero__grid,
@@ -1529,6 +1556,8 @@ blockquote {
 
   .hero__visual {
     order: 2;
+    justify-self: center;
+    width: min(100%, 640px);
   }
 
   .portrait-frame {
@@ -1559,6 +1588,14 @@ blockquote {
     width: fit-content;
   }
 
+  .portfolio-wall {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .segments__preview {
     display: none;
   }
@@ -1577,16 +1614,22 @@ blockquote {
     grid-template-columns: 1fr;
     justify-items: start;
   }
+
+  .project-contact__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
   .section {
-    padding: 84px 0;
+    padding: 76px 0;
   }
 
   .hero {
     min-height: auto;
-    padding-top: calc(var(--header-height) + 42px);
+    padding-top: calc(var(--header-height) + 34px);
+    padding-bottom: 64px;
   }
 
   h1,
@@ -1609,6 +1652,10 @@ blockquote {
 
   .hero__actions .button {
     width: 100%;
+  }
+
+  .mobile-menu {
+    overflow-y: auto;
   }
 
   .portrait-frame {
@@ -1666,6 +1713,21 @@ blockquote {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .portfolio-filters {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: none;
+  }
+
+  .portfolio-filters::-webkit-scrollbar {
+    display: none;
+  }
+
+  .portfolio-filter {
+    flex: 0 0 auto;
+  }
+
   .services-grid,
   .process-grid {
     grid-template-columns: 1fr;
@@ -1673,11 +1735,29 @@ blockquote {
 
   .service-card,
   .process-step {
-    min-height: 230px;
+    min-height: auto;
+  }
+
+  .service-card {
+    grid-template-rows: auto auto auto;
+    padding: 22px;
+  }
+
+  .service-card h3 {
+    min-height: 0;
+  }
+
+  .process-step span {
+    margin-bottom: 34px;
   }
 
   .final-cta strong {
     font-size: 2rem;
+  }
+
+  .final-cta::after {
+    right: -110px;
+    bottom: -120px;
   }
 
   .lightbox {
@@ -1713,6 +1793,10 @@ blockquote {
     width: min(100% - 28px, 100%);
   }
 
+  .section {
+    padding: 64px 0;
+  }
+
   .site-header__inner {
     width: min(100% - 24px, 100%);
   }
@@ -1743,6 +1827,9 @@ blockquote {
     width: 100%;
     min-height: 50px;
     padding: 0 16px;
+    line-height: 1.15;
+    text-align: center;
+    white-space: normal;
   }
 
   .tag-list li {
@@ -1750,7 +1837,8 @@ blockquote {
   }
 
   .portrait-frame {
-    min-height: 390px;
+    min-height: 0;
+    aspect-ratio: 4 / 5;
     border-radius: 20px;
   }
 
@@ -1801,6 +1889,16 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .portfolio-counter {
+    width: 100%;
+  }
+
+  .portfolio-filter {
+    min-height: 40px;
+    padding: 0 12px;
+    font-size: 0.82rem;
+  }
+
   .portfolio-piece__overlay {
     opacity: 1;
   }
@@ -1816,6 +1914,11 @@ blockquote {
 
   .project-next__actions,
   .final-cta__actions {
+    width: 100%;
+  }
+
+  .project-contact__inner .button,
+  .project-next__actions .button {
     width: 100%;
   }
 
@@ -1846,7 +1949,7 @@ blockquote {
   }
 
   .portrait-frame {
-    min-height: 360px;
+    aspect-ratio: 4 / 5.15;
   }
 }
 
@@ -1871,6 +1974,10 @@ blockquote {
 
   .project-card {
     min-height: 285px;
+  }
+
+  .portfolio-filter {
+    font-size: 0.78rem;
   }
 }
 
