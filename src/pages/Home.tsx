@@ -1,4 +1,5 @@
 import About from "../components/About";
+import BehancePortfolio from "../components/BehancePortfolio";
 import FeaturedProjects from "../components/FeaturedProjects";
 import FinalCTA from "../components/FinalCTA";
 import Hero from "../components/Hero";
@@ -28,6 +29,7 @@ const Home = () => (
     />
     <Hero />
     <FeaturedProjects />
+    <BehancePortfolio />
     <SegmentAccordion />
     <About />
     <Services />

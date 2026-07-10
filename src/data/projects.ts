@@ -34,8 +34,6 @@ export type Segment = {
   preview: string;
 };
 
-const img = "/images/placeholders";
-
 export const projects: Project[] = [
   {
     id: 1,
@@ -54,27 +52,27 @@ export const projects: Project[] = [
       "Criação de uma grade visual editorial, com títulos fortes, cards informativos, ícones lineares e uso estratégico de azul.",
     result:
       "Uma comunicação mais consistente, com peças fáceis de entender e adequadas para campanhas, datas comerciais e conteúdos educativos.",
-    cover: `${img}/project-obdc.svg`,
+    cover: "/images/portfolio/contabilidade/post-clareza-nos-numeros-seguranca-nas-decisoes.png",
     featured: true,
     featuredSize: "large",
     gallery: [
       {
-        src: `${img}/project-obdc.svg`,
-        alt: "Placeholder de projeto para social media de contabilidade OBDC",
-        caption: "Capa editorial",
-        description: "Espaço reservado para a capa principal do projeto OBDC.",
+        src: "/images/portfolio/contabilidade/post-clareza-nos-numeros-seguranca-nas-decisoes.png",
+        alt: "Arte de social media com o tema clareza nos números e segurança nas decisões",
+        caption: "Clareza nos números",
+        description: "Peça real de social media para comunicação contábil com hierarquia clara.",
       },
       {
-        src: `${img}/project-obdc-feed.svg`,
-        alt: "Placeholder de posts para redes sociais da OBDC",
-        caption: "Sequência de posts",
-        description: "Espaço reservado para uma sequência de peças de feed.",
+        src: "/images/portfolio/contabilidade/post-acelere-com-a-obdc.png",
+        alt: "Arte de social media Acelere com a OBDC",
+        caption: "Acelere com a OBDC",
+        description: "Peça de campanha com composição comercial e chamada objetiva.",
       },
       {
-        src: `${img}/project-obdc-stories.svg`,
-        alt: "Placeholder de stories para contabilidade",
-        caption: "Stories e chamadas",
-        description: "Espaço reservado para stories e chamadas comerciais.",
+        src: "/images/portfolio/contabilidade/declaracao-de-ir-01.png",
+        alt: "Arte de social media sobre declaração de imposto de renda",
+        caption: "Declaração de IR",
+        description: "Conteúdo técnico transformado em peça visual clara para redes sociais.",
       },
     ],
   },
@@ -95,21 +93,21 @@ export const projects: Project[] = [
       "Uso de imagens amplas, blocos de informação, recortes geométricos e contraste entre preto, branco e azul institucional.",
     result:
       "Uma linha visual versátil para ofertas, informativos, lançamentos e conteúdos de relacionamento com produtores.",
-    cover: `${img}/project-cia-terra.svg`,
+    cover: "/images/portfolio/agronegocio/bem-vindo-2026-cia-da-terra.png",
     featured: true,
     featuredSize: "wide",
     gallery: [
       {
-        src: `${img}/project-cia-terra.svg`,
-        alt: "Placeholder de campanha para agronegócio Cia da Terra",
-        caption: "Campanha institucional",
-        description: "Espaço reservado para a peça principal do projeto Cia da Terra.",
+        src: "/images/portfolio/agronegocio/bem-vindo-2026-cia-da-terra.png",
+        alt: "Arte de boas-vindas 2026 para Cia da Terra",
+        caption: "Bem-vindo 2026",
+        description: "Peça de campanha para agronegócio com leitura forte e acabamento institucional.",
       },
       {
-        src: `${img}/project-agro-detail.svg`,
-        alt: "Placeholder de detalhe visual para projeto de agronegócio",
-        caption: "Detalhe de produto",
-        description: "Espaço reservado para cards de produto e ofertas.",
+        src: "/images/portfolio/agronegocio/post-manejo-inteligente-cia-da-terra.png",
+        alt: "Arte de social media sobre manejo inteligente para Cia da Terra",
+        caption: "Manejo inteligente",
+        description: "Peça informativa com foco em clareza e autoridade técnica.",
       },
     ],
   },
@@ -130,21 +128,21 @@ export const projects: Project[] = [
       "Hierarquia de informação, pictogramas lineares, áreas de respiro e composição modular para leitura em ambientes corporativos.",
     result:
       "Materiais mais didáticos para campanhas internas, treinamentos e comunicados de prevenção.",
-    cover: `${img}/project-seguranca.svg`,
+    cover: "/images/portfolio/seguranca-no-trabalho/capa-ergonomia-no-trabalho.png",
     featured: true,
     featuredSize: "tall",
     gallery: [
       {
-        src: `${img}/project-seguranca.svg`,
-        alt: "Placeholder de material institucional de segurança do trabalho",
-        caption: "Comunicado preventivo",
-        description: "Espaço reservado para comunicado de segurança do trabalho.",
+        src: "/images/portfolio/seguranca-no-trabalho/capa-ergonomia-no-trabalho.png",
+        alt: "Capa de material sobre ergonomia no trabalho",
+        caption: "Ergonomia no trabalho",
+        description: "Material real de segurança do trabalho com foco em comunicação preventiva.",
       },
       {
-        src: `${img}/project-safety-poster.svg`,
-        alt: "Placeholder de cartaz corporativo de segurança",
-        caption: "Cartaz interno",
-        description: "Espaço reservado para cartaz institucional.",
+        src: "/images/portfolio/seguranca-no-trabalho/post-entrega-de-epi.png",
+        alt: "Arte sobre entrega de EPI para segurança do trabalho",
+        caption: "Entrega de EPI",
+        description: "Peça educativa para redes sociais e comunicação técnica.",
       },
     ],
   },
@@ -165,21 +163,21 @@ export const projects: Project[] = [
       "Sistema de grids, títulos editoriais, contraste controlado e elementos visuais adaptáveis a cada campanha.",
     result:
       "Peças com melhor leitura, maior consistência e mais facilidade para planejar campanhas recorrentes.",
-    cover: `${img}/project-campanhas.svg`,
+    cover: "/images/portfolio/datas-comemorativas/dia-dos-namorados-2026.png",
     featured: true,
     featuredSize: "standard",
     gallery: [
       {
-        src: `${img}/project-campanhas.svg`,
-        alt: "Placeholder de campanhas para social media",
-        caption: "Coleção de campanhas",
-        description: "Espaço reservado para campanha social media.",
+        src: "/images/portfolio/datas-comemorativas/dia-dos-namorados-2026.png",
+        alt: "Arte para campanha de Dia dos Namorados 2026",
+        caption: "Dia dos Namorados",
+        description: "Campanha sazonal com direção visual própria e apelo emocional.",
       },
       {
-        src: `${img}/project-carousel.svg`,
-        alt: "Placeholder de carrossel social media",
-        caption: "Carrossel",
-        description: "Espaço reservado para sequência de carrossel.",
+        src: "/images/portfolio/moiarts/design-estrategico.png",
+        alt: "Arte autoral sobre design estratégico",
+        caption: "Design estratégico",
+        description: "Peça de conteúdo autoral com linguagem forte para social media.",
       },
     ],
   },
@@ -200,21 +198,21 @@ export const projects: Project[] = [
       "Layout editorial, capítulos bem definidos, blocos de conteúdo e uso consistente de ícones, cores e margens.",
     result:
       "Apresentações e materiais mais confiáveis, úteis para reuniões, propostas, treinamentos e comunicação interna.",
-    cover: `${img}/project-apresentacao.svg`,
+    cover: "/images/portfolio/contabilidade/post-contabilidade-controladoria-e-estrategia-precisam-andar-juntas-01.png",
     featured: true,
     featuredSize: "wide",
     gallery: [
       {
-        src: `${img}/project-apresentacao.svg`,
-        alt: "Placeholder de apresentação institucional",
-        caption: "Deck institucional",
-        description: "Espaço reservado para slides institucionais.",
+        src: "/images/portfolio/contabilidade/post-contabilidade-controladoria-e-estrategia-precisam-andar-juntas-01.png",
+        alt: "Arte institucional sobre contabilidade, controladoria e estratégia",
+        caption: "Estratégia e controladoria",
+        description: "Peça institucional com organização editorial de informação.",
       },
       {
-        src: `${img}/project-report.svg`,
-        alt: "Placeholder de relatório institucional",
-        caption: "Relatório visual",
-        description: "Espaço reservado para relatório e material interno.",
+        src: "/images/portfolio/contabilidade/post-2026-nao-vai-ser-dificil-vai-ser-seletivo.png",
+        alt: "Arte institucional sobre planejamento para 2026",
+        caption: "Planejamento 2026",
+        description: "Comunicação visual voltada para leitura profissional e tomada de decisão.",
       },
     ],
   },
@@ -235,21 +233,21 @@ export const projects: Project[] = [
       "Composições com ponto focal claro, uso de profundidade, contraste, recortes e acabamento limpo.",
     result:
       "Peças mais marcantes para campanhas, lançamentos, chamadas promocionais e comunicação de alto impacto.",
-    cover: `${img}/project-manipulacao.svg`,
+    cover: "/images/portfolio/manipulacao-de-imagem/monster-no-gelo-noturno.png",
     featured: true,
     featuredSize: "standard",
     gallery: [
       {
-        src: `${img}/project-manipulacao.svg`,
-        alt: "Placeholder de manipulação de imagem para campanha",
-        caption: "Composição criativa",
-        description: "Espaço reservado para manipulação de imagem.",
+        src: "/images/portfolio/manipulacao-de-imagem/monster-no-gelo-noturno.png",
+        alt: "Manipulação de imagem com lata Monster em ambiente gelado noturno",
+        caption: "Monster no gelo",
+        description: "Composição criativa com tratamento, atmosfera e apelo publicitário.",
       },
       {
-        src: `${img}/project-image-edit.svg`,
-        alt: "Placeholder de tratamento fotográfico",
-        caption: "Tratamento fotográfico",
-        description: "Espaço reservado para antes e depois ou variações de tratamento.",
+        src: "/images/portfolio/manipulacao-de-imagem/perfume.png",
+        alt: "Manipulação de imagem publicitária para perfume",
+        caption: "Perfume",
+        description: "Peça de manipulação com foco em produto, iluminação e acabamento.",
       },
     ],
   },
@@ -270,21 +268,21 @@ export const projects: Project[] = [
       "Estudos com grids, tipografia grande, recortes abstratos e composições de alto contraste.",
     result:
       "Um repertório visual mais amplo para inspirar campanhas, layouts editoriais e projetos institucionais.",
-    cover: `${img}/project-autoral.svg`,
+    cover: "/images/portfolio/moiarts/post-viking-01.png",
     featured: false,
     featuredSize: "standard",
     gallery: [
       {
-        src: `${img}/project-autoral.svg`,
-        alt: "Placeholder de projeto autoral editorial",
-        caption: "Estudo autoral",
-        description: "Espaço reservado para projeto autoral.",
+        src: "/images/portfolio/moiarts/post-viking-01.png",
+        alt: "Projeto autoral com composição visual Viking",
+        caption: "Viking",
+        description: "Projeto autoral com composição forte e direção visual própria.",
       },
       {
-        src: `${img}/project-editorial-grid.svg`,
-        alt: "Placeholder de grid editorial autoral",
-        caption: "Grid editorial",
-        description: "Espaço reservado para estudo de composição.",
+        src: "/images/portfolio/moiarts/urso-01.png",
+        alt: "Projeto autoral com composição visual de urso",
+        caption: "Urso",
+        description: "Estudo visual autoral para repertório, composição e impacto.",
       },
     ],
   },
@@ -298,7 +296,7 @@ export const segments: Segment[] = [
     description: "Conteúdos técnicos com aparência confiável, leitura rápida e comunicação preparada para empresários.",
     services: ["Social media", "Campanhas", "Informativos", "Materiais institucionais"],
     projectSlugs: ["social-media-obdc"],
-    preview: `${img}/project-obdc.svg`,
+    preview: "/images/portfolio/contabilidade/post-clareza-nos-numeros-seguranca-nas-decisoes.png",
   },
   {
     id: "agronegocio",
@@ -307,7 +305,7 @@ export const segments: Segment[] = [
     description: "Peças robustas para ofertas, campanhas, relacionamento e comunicação institucional no campo.",
     services: ["Campanhas", "Social media", "Materiais comerciais", "Direção visual"],
     projectSlugs: ["agronegocio-cia-da-terra"],
-    preview: `${img}/project-cia-terra.svg`,
+    preview: "/images/portfolio/agronegocio/bem-vindo-2026-cia-da-terra.png",
   },
   {
     id: "seguranca",
@@ -316,7 +314,7 @@ export const segments: Segment[] = [
     description: "Materiais claros para prevenção, treinamento e comunicação interna com responsabilidade visual.",
     services: ["Informativos", "Cartazes", "Materiais internos", "Apresentações"],
     projectSlugs: ["seguranca-do-trabalho"],
-    preview: `${img}/project-seguranca.svg`,
+    preview: "/images/portfolio/seguranca-no-trabalho/capa-ergonomia-no-trabalho.png",
   },
   {
     id: "campanhas",
@@ -325,7 +323,7 @@ export const segments: Segment[] = [
     description: "Campanhas com chamadas fortes, hierarquia de informação e consistência entre formatos.",
     services: ["Posts", "Carrosséis", "Stories", "Campanhas sazonais"],
     projectSlugs: ["campanhas-social-media", "social-media-obdc"],
-    preview: `${img}/project-campanhas.svg`,
+    preview: "/images/portfolio/datas-comemorativas/dia-dos-namorados-2026.png",
   },
   {
     id: "institucional",
@@ -334,7 +332,7 @@ export const segments: Segment[] = [
     description: "Comunicação visual organizada para apresentações, propostas, materiais internos e peças corporativas.",
     services: ["Apresentações", "Propostas", "Relatórios", "Comunicados"],
     projectSlugs: ["institucional-apresentacoes", "seguranca-do-trabalho"],
-    preview: `${img}/project-apresentacao.svg`,
+    preview: "/images/portfolio/contabilidade/post-contabilidade-controladoria-e-estrategia-precisam-andar-juntas-01.png",
   },
   {
     id: "manipulacao",
@@ -343,7 +341,7 @@ export const segments: Segment[] = [
     description: "Composições criativas, tratamento fotográfico e peças publicitárias com acabamento de campanha.",
     services: ["Composição", "Tratamento", "Peças publicitárias", "Campanhas visuais"],
     projectSlugs: ["manipulacao-de-imagens"],
-    preview: `${img}/project-manipulacao.svg`,
+    preview: "/images/portfolio/manipulacao-de-imagem/monster-no-gelo-noturno.png",
   },
   {
     id: "autorais",
@@ -352,7 +350,7 @@ export const segments: Segment[] = [
     description: "Estudos visuais para ampliar repertório, linguagem gráfica e soluções de composição editorial.",
     services: ["Experimentação", "Direção visual", "Editorial", "Composição"],
     projectSlugs: ["projetos-autorais"],
-    preview: `${img}/project-autoral.svg`,
+    preview: "/images/portfolio/moiarts/post-viking-01.png",
   },
 ];
 

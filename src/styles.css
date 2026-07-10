@@ -669,6 +669,153 @@ p {
   background: var(--white);
 }
 
+.behance-portfolio {
+  background: var(--white);
+}
+
+.behance-portfolio__top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 28px;
+}
+
+.portfolio-counter {
+  display: inline-flex;
+  min-width: 128px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--background);
+  color: var(--primary-dark);
+  font-weight: 900;
+}
+
+.portfolio-counter strong {
+  color: var(--black);
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -12px 0 28px;
+}
+
+.portfolio-filter {
+  min-height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 15px;
+  background: var(--white);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.portfolio-filter:hover,
+.portfolio-filter--active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--white);
+}
+
+.portfolio-wall {
+  columns: 4 230px;
+  column-gap: 16px;
+}
+
+.portfolio-piece {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  break-inside: avoid;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 0 0 16px;
+  padding: 0;
+  background: var(--background);
+  color: var(--white);
+  cursor: zoom-in;
+}
+
+.portfolio-piece img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-piece--portrait img {
+  aspect-ratio: 4 / 5;
+}
+
+.portfolio-piece--landscape img {
+  aspect-ratio: 16 / 10;
+}
+
+.portfolio-piece--square img {
+  aspect-ratio: 1 / 1;
+}
+
+.portfolio-piece__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px;
+  opacity: 0;
+  background: linear-gradient(180deg, rgba(8, 10, 13, 0.02), rgba(8, 10, 13, 0.78));
+  transition: opacity 0.25s ease;
+}
+
+.portfolio-piece__overlay span {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+  text-align: left;
+}
+
+.portfolio-piece__overlay small {
+  color: #b9d3ff;
+  font-size: 0.72rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.portfolio-piece__overlay strong {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--white);
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.16;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.portfolio-piece:hover img {
+  transform: scale(1.03);
+}
+
+.portfolio-piece:hover .portfolio-piece__overlay {
+  opacity: 1;
+}
+
 .segments__header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 250px;
@@ -1431,6 +1578,15 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
+  .behance-portfolio__top {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-counter {
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
   .segments__preview {
     display: none;
   }
@@ -1531,6 +1687,10 @@ blockquote {
   }
 
   .masonry-grid {
+    columns: 2 190px;
+  }
+
+  .portfolio-wall {
     columns: 2 190px;
   }
 
@@ -1664,6 +1824,14 @@ blockquote {
     columns: 1;
   }
 
+  .portfolio-wall {
+    columns: 1;
+  }
+
+  .portfolio-piece__overlay {
+    opacity: 1;
+  }
+
   .about__image,
   .about__image img {
     min-height: 390px;
@@ -1759,6 +1927,7 @@ blockquote {
 
   .project-card:hover img,
   .gallery-item:hover img,
+  .portfolio-piece:hover img,
   .button:hover,
   .service-card:hover {
     transform: none;
