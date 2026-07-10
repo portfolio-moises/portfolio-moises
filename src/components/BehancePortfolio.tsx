@@ -6,6 +6,7 @@ import ProjectLightbox from "./ProjectLightbox";
 import SectionTitle from "./SectionTitle";
 
 const INITIAL_VISIBLE_ITEMS = 20;
+const DATES_CATEGORY = "DATAS COMEMORATIVAS";
 
 const BehancePortfolio = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
@@ -13,7 +14,10 @@ const BehancePortfolio = () => {
   const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_ITEMS);
 
   const filteredItems = useMemo(
-    () => (activeCategory === "Todos" ? portfolio : portfolio.filter((item) => item.category === activeCategory)),
+    () =>
+      activeCategory === "Todos"
+        ? portfolio.filter((item) => !(item.category === DATES_CATEGORY && item.orientation === "landscape"))
+        : portfolio.filter((item) => item.category === activeCategory),
     [activeCategory],
   );
 

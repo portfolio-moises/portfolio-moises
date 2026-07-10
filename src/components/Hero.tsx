@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { getWhatsAppUrl } from "../config/site";
 import { publicAsset } from "../utils/assets";
 
-const tags = ["Social Media", "Institucional", "Apresentações", "Manipulação de Imagens"];
 const capsules = ["Criativo", "Estratégico", "Proativo"];
 
 const fadeUp = {
@@ -39,11 +38,6 @@ const Hero = () => (
             Falar no WhatsApp
           </a>
         </motion.div>
-        <motion.ul className="tag-list" variants={fadeUp} aria-label="Especialidades">
-          {tags.map((tag) => (
-            <li key={tag}>{tag}</li>
-          ))}
-        </motion.ul>
       </motion.div>
 
       <motion.div

@@ -1,5 +1,5 @@
-import { Linkedin, Mail, MessageCircle } from "lucide-react";
-import { getWhatsAppUrl, siteConfig } from "../config/site";
+import { Linkedin, Mail } from "lucide-react";
+import { siteConfig } from "../config/site";
 
 const SocialLinks = () => (
   <div className="social-links" aria-label="Links de contato">
@@ -16,10 +16,6 @@ const SocialLinks = () => (
     <a href={`mailto:${siteConfig.email}`}>
       <Mail size={18} aria-hidden="true" />
       E-mail
-    </a>
-    <a href={getWhatsAppUrl()} target="_blank" rel="noreferrer">
-      <MessageCircle size={18} aria-hidden="true" />
-      WhatsApp
     </a>
   </div>
 );

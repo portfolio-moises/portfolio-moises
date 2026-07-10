@@ -3,7 +3,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
-import WhatsAppButton from "./components/WhatsAppButton";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import ProjectPage from "./pages/ProjectPage";
@@ -29,7 +28,6 @@ const App = () => {
       <Header />
       <AnimatedRoutes />
       <Footer />
-      <WhatsAppButton />
     </>
   );
 };
