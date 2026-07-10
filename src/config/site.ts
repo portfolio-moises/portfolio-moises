@@ -4,7 +4,7 @@ export const siteConfig = {
   email: "contato@seudominio.com",
   behance: "https://www.behance.net/moisshenrique1",
   linkedin: "https://www.linkedin.com/in/moiseshenrique1/",
-  whatsappNumber: "55SEUNUMERO",
+  whatsappNumber: "5534984329086",
   canonicalUrl: "https://portfolio-moises.github.io/portfolio-moises/",
 };
 

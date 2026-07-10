@@ -449,12 +449,13 @@ p {
 
 .portrait-frame img {
   position: absolute;
-  inset: 44px 34px 0;
+  inset: 44px 34px 34px;
   z-index: 2;
   width: calc(100% - 68px);
-  height: calc(100% - 44px);
+  height: calc(100% - 78px);
+  border-radius: 18px;
   object-fit: cover;
-  object-position: center bottom;
+  object-position: center center;
 }
 
 .portrait-frame__grid {
@@ -732,19 +733,20 @@ p {
 }
 
 .portfolio-wall {
-  columns: 4 230px;
-  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  align-items: start;
 }
 
 .portfolio-piece {
   position: relative;
-  display: inline-block;
+  display: block;
   width: 100%;
-  break-inside: avoid;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  margin: 0 0 16px;
+  margin: 0;
   padding: 0;
   background: var(--background);
   color: var(--white);
@@ -1101,8 +1103,9 @@ blockquote {
   position: relative;
   display: grid;
   min-height: 310px;
-  align-content: end;
-  gap: 16px;
+  grid-template-rows: 32px 58px minmax(0, 1fr);
+  align-content: start;
+  gap: 18px;
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1121,7 +1124,13 @@ blockquote {
 }
 
 .service-card svg {
+  align-self: end;
   color: var(--primary);
+}
+
+.service-card h3 {
+  align-self: start;
+  min-height: 58px;
 }
 
 .service-card__number {
@@ -1136,6 +1145,7 @@ blockquote {
 }
 
 .service-card p {
+  align-self: start;
   font-size: 0.94rem;
 }
 
@@ -1697,7 +1707,7 @@ blockquote {
   }
 
   .portfolio-wall {
-    columns: 2 190px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .services-grid,
@@ -1789,9 +1799,10 @@ blockquote {
   }
 
   .portrait-frame img {
-    inset: 32px 20px 0;
+    inset: 32px 20px 24px;
     width: calc(100% - 40px);
-    height: calc(100% - 32px);
+    height: calc(100% - 56px);
+    border-radius: 14px;
   }
 
   .decor--ring {
@@ -1831,7 +1842,7 @@ blockquote {
   }
 
   .portfolio-wall {
-    columns: 1;
+    grid-template-columns: 1fr;
   }
 
   .portfolio-piece__overlay {
