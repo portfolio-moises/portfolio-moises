@@ -816,6 +816,12 @@ p {
   opacity: 1;
 }
 
+.portfolio-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+
 .segments__header {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 250px;

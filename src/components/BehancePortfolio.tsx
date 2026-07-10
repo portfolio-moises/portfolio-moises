@@ -5,14 +5,21 @@ import { publicAsset } from "../utils/assets";
 import ProjectLightbox from "./ProjectLightbox";
 import SectionTitle from "./SectionTitle";
 
+const INITIAL_VISIBLE_ITEMS = 20;
+
 const BehancePortfolio = () => {
   const [activeCategory, setActiveCategory] = useState("Todos");
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+  const [visibleCount, setVisibleCount] = useState(INITIAL_VISIBLE_ITEMS);
 
-  const visibleItems = useMemo(
+  const filteredItems = useMemo(
     () => (activeCategory === "Todos" ? portfolio : portfolio.filter((item) => item.category === activeCategory)),
     [activeCategory],
   );
+
+  const visibleItems = useMemo(() => filteredItems.slice(0, visibleCount), [filteredItems, visibleCount]);
+
+  const hasMoreItems = visibleCount < filteredItems.length;
 
   const lightboxImages = useMemo(
     () =>
@@ -40,13 +47,13 @@ const BehancePortfolio = () => {
         <div className="behance-portfolio__top">
           <SectionTitle
             eyebrow="Portfólio visual"
-            title="Uma seleção completa de peças reais, organizada como uma galeria de Behance."
+            title="Uma seleção de peças reais, organizada como uma galeria de Behance."
             description="Clique em qualquer projeto para expandir, navegar pelas imagens e ver a peça em destaque."
           />
-          <div className="portfolio-counter" aria-label={`${visibleItems.length} peças exibidas`}>
+          <div className="portfolio-counter" aria-label={`${visibleItems.length} de ${filteredItems.length} peças exibidas`}>
             <Grid3X3 size={20} aria-hidden="true" />
             <strong>{visibleItems.length}</strong>
-            <span>peças</span>
+            <span>de {filteredItems.length}</span>
           </div>
         </div>
 
@@ -60,6 +67,7 @@ const BehancePortfolio = () => {
               onClick={() => {
                 setActiveCategory(category);
                 setCurrentIndex(null);
+                setVisibleCount(INITIAL_VISIBLE_ITEMS);
               }}
             >
               {category}
@@ -87,6 +95,18 @@ const BehancePortfolio = () => {
             </button>
           ))}
         </div>
+
+        {hasMoreItems ? (
+          <div className="portfolio-more">
+            <button
+              className="button button--dark"
+              type="button"
+              onClick={() => setVisibleCount((current) => Math.min(current + INITIAL_VISIBLE_ITEMS, filteredItems.length))}
+            >
+              Ver mais projetos
+            </button>
+          </div>
+        ) : null}
       </div>
 
       {currentIndex !== null ? (

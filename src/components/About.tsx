@@ -5,7 +5,7 @@ const About = () => (
   <section id="sobre" className="about section grid-surface" aria-labelledby="about-title">
     <div className="container about__grid">
       <figure className="about__image">
-        <img src={publicAsset("/images/placeholders/foto-moises-placeholder.svg")} alt="Placeholder para fotografia profissional de Moisés Henrique" loading="lazy" />
+        <img src={publicAsset("/images/profile/moises-henrique.jpg")} alt="Retrato profissional de Moisés Henrique" loading="lazy" />
       </figure>
       <div className="about__copy">
         <SectionTitle eyebrow="Sobre" title="Quem é o Moisés?" />

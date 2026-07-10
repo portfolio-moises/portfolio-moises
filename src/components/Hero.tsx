@@ -53,7 +53,7 @@ const Hero = () => (
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.12 }}
       >
         <div className="portrait-frame" aria-label="Área preparada para fotografia do designer">
-          <img src={publicAsset("/images/placeholders/foto-moises-placeholder.svg")} alt="Placeholder para fotografia recortada de Moisés Henrique" loading="eager" />
+          <img src={publicAsset("/images/profile/moises-henrique.jpg")} alt="Retrato profissional de Moisés Henrique" loading="eager" />
           <div className="portrait-frame__grid" aria-hidden="true" />
           <MousePointer2 className="decor decor--cursor" size={34} aria-hidden="true" />
           <Sparkle className="decor decor--sparkle" size={30} aria-hidden="true" />

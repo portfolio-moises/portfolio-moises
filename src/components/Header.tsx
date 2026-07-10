@@ -6,7 +6,6 @@ import { getWhatsAppUrl, siteConfig } from "../config/site";
 const navItems = [
   { label: "Início", id: "inicio" },
   { label: "Projetos", id: "projetos" },
-  { label: "Segmentos", id: "segmentos" },
   { label: "Sobre", id: "sobre" },
   { label: "Serviços", id: "servicos" },
   { label: "Contato", id: "contato" },

@@ -5,7 +5,6 @@ import FinalCTA from "../components/FinalCTA";
 import Hero from "../components/Hero";
 import PageTransition from "../components/PageTransition";
 import Process from "../components/Process";
-import SegmentAccordion from "../components/SegmentAccordion";
 import Services from "../components/Services";
 import SEO from "../utils/seo";
 import { siteConfig } from "../config/site";
@@ -30,7 +29,6 @@ const Home = () => (
     <Hero />
     <FeaturedProjects />
     <BehancePortfolio />
-    <SegmentAccordion />
     <About />
     <Services />
     <Process />
