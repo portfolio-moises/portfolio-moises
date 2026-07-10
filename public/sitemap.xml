@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/</loc>
+    <loc>https://portfolio-moises.github.io/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/social-media-obdc</loc>
+    <loc>https://portfolio-moises.github.io/projetos/social-media-obdc</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/agronegocio-cia-da-terra</loc>
+    <loc>https://portfolio-moises.github.io/projetos/agronegocio-cia-da-terra</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/seguranca-do-trabalho</loc>
+    <loc>https://portfolio-moises.github.io/projetos/seguranca-do-trabalho</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/campanhas-social-media</loc>
+    <loc>https://portfolio-moises.github.io/projetos/campanhas-social-media</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/institucional-apresentacoes</loc>
+    <loc>https://portfolio-moises.github.io/projetos/institucional-apresentacoes</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/manipulacao-de-imagens</loc>
+    <loc>https://portfolio-moises.github.io/projetos/manipulacao-de-imagens</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://portfolio-moises.github.io/portfolio-moises/projetos/projetos-autorais</loc>
+    <loc>https://portfolio-moises.github.io/projetos/projetos-autorais</loc>
     <priority>0.7</priority>
   </url>
 </urlset>

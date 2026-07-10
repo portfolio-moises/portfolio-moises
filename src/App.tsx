@@ -1,6 +1,5 @@
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
@@ -27,7 +26,6 @@ const App = () => {
       <ScrollToTop />
       <Header />
       <AnimatedRoutes />
-      <Footer />
     </>
   );
 };

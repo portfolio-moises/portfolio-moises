@@ -5,7 +5,7 @@ export const siteConfig = {
   behance: "https://www.behance.net/moisshenrique1",
   linkedin: "https://www.linkedin.com/in/moiseshenrique1/",
   whatsappNumber: "5534984329086",
-  canonicalUrl: "https://portfolio-moises.github.io/portfolio-moises/",
+  canonicalUrl: "https://portfolio-moises.github.io/",
 };
 
 export const getWhatsAppUrl = (message = "Olá, Moisés! Vim pelo seu portfólio e gostaria de conversar sobre um projeto.") => {

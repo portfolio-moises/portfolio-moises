@@ -6,7 +6,8 @@ declare const process: {
 };
 
 const repoName = process.env.GITHUB_REPOSITORY?.split("/")[1];
-const githubPagesBase = process.env.GITHUB_PAGES === "true" && repoName ? `/${repoName}/` : "/";
+const githubPagesBase =
+  process.env.GITHUB_PAGES === "true" && repoName && !repoName.endsWith(".github.io") ? `/${repoName}/` : "/";
 
 export default defineConfig({
   base: process.env.VITE_BASE_PATH || githubPagesBase,
