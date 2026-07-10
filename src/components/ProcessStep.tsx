@@ -1,0 +1,15 @@
+type ProcessStepProps = {
+  number: string;
+  title: string;
+  description: string;
+};
+
+const ProcessStep = ({ number, title, description }: ProcessStepProps) => (
+  <article className="process-step">
+    <span>{number}</span>
+    <h3>{title}</h3>
+    <p>{description}</p>
+  </article>
+);
+
+export default ProcessStep;

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder grid editorial</title>
+  <desc id="desc">Imagem temporária para estudo de composição editorial.</desc>
+  <rect width="1600" height="1200" fill="#080A0D"/>
+  <path d="M160 150h360v900H160zM620 150h360v420H620zM620 630h360v420H620zM1080 150h360v900h-360z" fill="#FFFFFF"/>
+  <rect x="200" y="196" width="280" height="320" rx="8" fill="#075CCF"/>
+  <rect x="660" y="196" width="280" height="128" rx="8" fill="#DCEAFF"/>
+  <rect x="1120" y="196" width="280" height="320" rx="8" fill="#075CCF"/>
+  <path d="M200 650h260M660 742h260M1120 650h260" stroke="#DCE2EA" stroke-width="34" stroke-linecap="round"/>
+  <text x="800" y="1122" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="38" font-weight="900">ESTUDO EDITORIAL • PLACEHOLDER</text>
+</svg>

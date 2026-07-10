@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder manipulação de imagens</title>
+  <desc id="desc">Imagem temporária para composição e manipulação de imagem.</desc>
+  <rect width="1600" height="1200" fill="#080A0D"/>
+  <path d="M0 0h1600v1200H0z" fill="url(#grid)" opacity=".18"/>
+  <circle cx="570" cy="568" r="298" fill="#075CCF"/>
+  <circle cx="780" cy="438" r="154" fill="#DCEAFF"/>
+  <rect x="870" y="342" width="462" height="462" rx="8" fill="#FFFFFF" transform="rotate(8 1101 573)"/>
+  <path d="M250 938h590M250 1030h420" stroke="#FFFFFF" stroke-width="52" stroke-linecap="round"/>
+  <text x="945" y="603" fill="#063B87" font-family="Arial, sans-serif" font-size="44" font-weight="900">IMAGEM</text>
+  <text x="945" y="662" fill="#727984" font-family="Arial, sans-serif" font-size="28" font-weight="800">PLACEHOLDER</text>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#DCEAFF" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

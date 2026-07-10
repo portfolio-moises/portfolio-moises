@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder para foto de Moisés Henrique</title>
+  <desc id="desc">Imagem temporária para substituir por fotografia recortada do designer.</desc>
+  <rect width="1000" height="1300" fill="#F6F8FB"/>
+  <path d="M0 0h1000v1300H0z" fill="url(#grid)"/>
+  <circle cx="500" cy="438" r="166" fill="#DCEAFF" stroke="#075CCF" stroke-width="18"/>
+  <path d="M262 1048c28-248 132-372 238-372s210 124 238 372" fill="#080A0D"/>
+  <path d="M318 1032c32-164 100-246 182-246s150 82 182 246" fill="#075CCF"/>
+  <rect x="140" y="90" width="266" height="74" rx="37" fill="#FFFFFF" stroke="#DCE2EA"/>
+  <text x="173" y="137" fill="#063B87" font-family="Arial, sans-serif" font-size="27" font-weight="800">FOTO DO DESIGNER</text>
+  <text x="500" y="1180" text-anchor="middle" fill="#727984" font-family="Arial, sans-serif" font-size="31" font-weight="700">SUBSTITUIR POR FOTO REAL</text>
+  <defs>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0v44" fill="none" stroke="#DCE2EA" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

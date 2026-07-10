@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando | Moisés Henrique</title>
+    <script>
+      (function () {
+        var segments = window.location.pathname.split("/").filter(Boolean);
+        var repoBase = segments.length ? "/" + segments[0] + "/" : "/";
+        var route = "/" + segments.slice(1).join("/");
+        var search = window.location.search ? "&q=" + encodeURIComponent(window.location.search) : "";
+        var hash = window.location.hash ? "&h=" + encodeURIComponent(window.location.hash.slice(1)) : "";
+        window.location.replace(window.location.origin + repoBase + "?p=" + encodeURIComponent(route || "/") + search + hash);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecionando...</p>
+  </body>
+</html>

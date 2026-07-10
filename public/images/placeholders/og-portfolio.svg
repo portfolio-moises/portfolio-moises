@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Open Graph do portfólio</title>
+  <desc id="desc">Imagem social temporária para o portfólio de Moisés Henrique.</desc>
+  <rect width="1200" height="630" fill="#080A0D"/>
+  <path d="M0 0h1200v630H0z" fill="url(#grid)" opacity=".16"/>
+  <rect x="72" y="78" width="1056" height="474" rx="8" fill="#FFFFFF"/>
+  <rect x="118" y="126" width="312" height="312" rx="8" fill="#075CCF"/>
+  <circle cx="312" cy="240" r="70" fill="#DCEAFF"/>
+  <path d="M162 397h224" stroke="#DCEAFF" stroke-width="28"/>
+  <text x="484" y="226" fill="#080A0D" font-family="Arial, sans-serif" font-size="66" font-weight="900">Moisés Henrique</text>
+  <text x="486" y="304" fill="#075CCF" font-family="Arial, sans-serif" font-size="38" font-weight="800">Designer Gráfico e Social Media</text>
+  <text x="486" y="382" fill="#727984" font-family="Arial, sans-serif" font-size="27" font-weight="700">Social media • Institucional • Apresentações</text>
+  <defs>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0v36" fill="none" stroke="#DCEAFF" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder stories OBDC</title>
+  <desc id="desc">Imagem temporária vertical para stories de contabilidade.</desc>
+  <rect width="1200" height="1600" fill="#075CCF"/>
+  <path d="M0 0h1200v1600H0z" fill="url(#grid)" opacity=".2"/>
+  <rect x="120" y="132" width="960" height="1336" rx="8" fill="#FFFFFF"/>
+  <circle cx="600" cy="454" r="174" fill="#DCEAFF"/>
+  <path d="M252 836h696M252 942h526M252 1048h412" stroke="#080A0D" stroke-width="48" stroke-linecap="round"/>
+  <rect x="252" y="1190" width="420" height="86" rx="43" fill="#075CCF"/>
+  <text x="600" y="1386" text-anchor="middle" fill="#727984" font-family="Arial, sans-serif" font-size="36" font-weight="800">STORIES • SUBSTITUIR</text>
+  <defs>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0v42" fill="none" stroke="#DCEAFF" stroke-width="1"/>
+    </pattern>
+  </defs>
+</svg>

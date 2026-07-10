@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1600" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder segurança do trabalho</title>
+  <desc id="desc">Imagem temporária para material institucional de segurança do trabalho.</desc>
+  <rect width="1200" height="1600" fill="#F6F8FB"/>
+  <rect x="96" y="104" width="1008" height="1392" rx="8" fill="#FFFFFF" stroke="#DCE2EA" stroke-width="3"/>
+  <path d="M600 258l290 112v238c0 224-122 394-290 482-168-88-290-258-290-482V370z" fill="#075CCF"/>
+  <path d="M486 618l82 82 168-204" fill="none" stroke="#FFFFFF" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M224 1118h752M224 1224h580M224 1330h414" stroke="#080A0D" stroke-width="48" stroke-linecap="round"/>
+  <text x="600" y="1450" text-anchor="middle" fill="#727984" font-family="Arial, sans-serif" font-size="34" font-weight="800">SEGURANÇA • PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "name": "Moisés Henrique | Designer Gráfico",
+  "short_name": "Moisés Henrique",
+  "description": "Portfólio profissional de design gráfico e social media.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F6F8FB",
+  "theme_color": "#075CCF",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

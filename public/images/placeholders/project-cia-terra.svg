@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder Cia da Terra</title>
+  <desc id="desc">Imagem temporária para campanha de agronegócio Cia da Terra.</desc>
+  <rect width="1600" height="1200" fill="#080A0D"/>
+  <rect x="96" y="96" width="1408" height="1008" rx="8" fill="#F6F8FB"/>
+  <path d="M96 802c214-148 372-194 560-118 210 84 390 48 848-180v600H96z" fill="#075CCF"/>
+  <path d="M96 898c264-124 508-106 748 0 226 100 426 92 660-54v260H96z" fill="#063B87"/>
+  <circle cx="1250" cy="306" r="138" fill="#DCEAFF"/>
+  <text x="168" y="268" fill="#080A0D" font-family="Arial, sans-serif" font-size="86" font-weight="900">Cia da Terra</text>
+  <text x="174" y="346" fill="#075CCF" font-family="Arial, sans-serif" font-size="38" font-weight="800">AGRONEGÓCIO • PLACEHOLDER</text>
+  <text x="174" y="1012" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="900">SUBSTITUIR PELA CAMPANHA REAL</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Placeholder tratamento fotográfico</title>
+  <desc id="desc">Imagem temporária para antes e depois de tratamento fotográfico.</desc>
+  <rect width="1600" height="1200" fill="#FFFFFF"/>
+  <rect x="106" y="132" width="672" height="872" rx="8" fill="#DCEAFF"/>
+  <rect x="822" y="132" width="672" height="872" rx="8" fill="#075CCF"/>
+  <circle cx="442" cy="510" r="178" fill="#FFFFFF"/>
+  <circle cx="1158" cy="510" r="178" fill="#DCEAFF"/>
+  <path d="M272 832h340M988 832h340" stroke="#080A0D" stroke-width="42" stroke-linecap="round"/>
+  <text x="442" y="1080" text-anchor="middle" fill="#727984" font-family="Arial, sans-serif" font-size="36" font-weight="800">ANTES</text>
+  <text x="1158" y="1080" text-anchor="middle" fill="#063B87" font-family="Arial, sans-serif" font-size="36" font-weight="800">DEPOIS • PLACEHOLDER</text>
+</svg>
