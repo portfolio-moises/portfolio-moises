@@ -47,7 +47,7 @@ const ProjectLightbox = ({ images, currentIndex, onClose, onNext, onPrevious }: 
           <img src={publicAsset(current.src)} alt={current.alt} />
           <figcaption>
             <strong>{current.title || current.caption}</strong>
-            <span>{current.description}</span>
+            {current.description ? <span>{current.description}</span> : null}
           </figcaption>
         </figure>
         <button className="lightbox__nav lightbox__nav--next" type="button" aria-label="Próxima imagem" onClick={onNext}>

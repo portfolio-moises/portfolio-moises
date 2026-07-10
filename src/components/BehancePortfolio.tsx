@@ -30,9 +30,9 @@ const BehancePortfolio = () => {
       visibleItems.map((item) => ({
         src: item.src,
         alt: item.alt,
-        caption: item.title,
-        title: item.title,
-        description: `${item.category} • ${item.width}x${item.height}`,
+        caption: item.category,
+        title: item.category,
+        description: "",
       })),
     [visibleItems],
   );
@@ -46,7 +46,7 @@ const BehancePortfolio = () => {
   }, [visibleItems.length]);
 
   return (
-    <section className="behance-portfolio section" aria-labelledby="portfolio-wall-title">
+    <section id="portfolio" className="behance-portfolio section" aria-labelledby="portfolio-wall-title">
       <div className="container">
         <div className="behance-portfolio__top">
           <SectionTitle
@@ -86,13 +86,12 @@ const BehancePortfolio = () => {
               type="button"
               className={`portfolio-piece portfolio-piece--${item.orientation}`}
               onClick={() => setCurrentIndex(index)}
-              aria-label={`Expandir projeto ${item.title}`}
+              aria-label={`Expandir peça da categoria ${item.category}`}
             >
               <img src={publicAsset(item.src)} alt={item.alt} loading="lazy" />
               <span className="portfolio-piece__overlay">
                 <span>
                   <small>{item.category}</small>
-                  <strong>{item.title}</strong>
                 </span>
                 <ArrowUpRight size={22} aria-hidden="true" />
               </span>

@@ -1,6 +1,5 @@
 import About from "../components/About";
 import BehancePortfolio from "../components/BehancePortfolio";
-import FeaturedProjects from "../components/FeaturedProjects";
 import FinalCTA from "../components/FinalCTA";
 import Hero from "../components/Hero";
 import PageTransition from "../components/PageTransition";
@@ -27,7 +26,6 @@ const Home = () => (
       structuredData={personStructuredData}
     />
     <Hero />
-    <FeaturedProjects />
     <BehancePortfolio />
     <About />
     <Services />

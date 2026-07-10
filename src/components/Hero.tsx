@@ -29,7 +29,7 @@ const Hero = () => (
           Transformo informações em peças visuais claras, profissionais e estratégicas para redes sociais, apresentações e materiais institucionais.
         </motion.p>
         <motion.div className="hero__actions" variants={fadeUp}>
-          <a className="button button--primary" href="#projetos">
+          <a className="button button--primary" href="#portfolio">
             Ver meus projetos
             <ArrowDownRight size={18} aria-hidden="true" />
           </a>
