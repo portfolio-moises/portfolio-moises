@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useEffect, useRef } from "react";
 import type { ProjectImage } from "../data/projects";
+import { publicAsset } from "../utils/assets";
 
 type LightboxItem = ProjectImage & {
   title?: string;
@@ -43,7 +44,7 @@ const ProjectLightbox = ({ images, currentIndex, onClose, onNext, onPrevious }: 
           <ChevronLeft size={26} aria-hidden="true" />
         </button>
         <figure>
-          <img src={current.src} alt={current.alt} />
+          <img src={publicAsset(current.src)} alt={current.alt} />
           <figcaption>
             <strong>{current.title || current.caption}</strong>
             <span>{current.description}</span>

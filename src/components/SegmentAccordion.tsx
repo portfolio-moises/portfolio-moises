@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { projects, segments } from "../data/projects";
+import { publicAsset } from "../utils/assets";
 import ProjectLightbox from "./ProjectLightbox";
 import SectionTitle from "./SectionTitle";
 
@@ -33,7 +34,7 @@ const SegmentAccordion = () => {
           description="Cada área pede ritmo, linguagem e organização próprios. Os accordions abaixo mostram como o mesmo olhar estratégico muda conforme o contexto."
         />
         <div className="segments__preview" aria-hidden="true">
-          <img src={hoveredPreview} alt="" loading="lazy" />
+          <img src={publicAsset(hoveredPreview)} alt="" loading="lazy" />
         </div>
       </div>
 
@@ -81,7 +82,7 @@ const SegmentAccordion = () => {
                       <div className="masonry-grid segment-gallery">
                         {gallery.map((image, index) => (
                           <button key={`${image.src}-${index}`} className="gallery-item" type="button" onClick={() => setLightboxIndex(index)}>
-                            <img src={image.src} alt={image.alt} loading="lazy" />
+                            <img src={publicAsset(image.src)} alt={image.alt} loading="lazy" />
                             <span>{image.caption}</span>
                           </button>
                         ))}

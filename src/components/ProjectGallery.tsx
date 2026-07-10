@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import type { ProjectImage } from "../data/projects";
+import { publicAsset } from "../utils/assets";
 import ProjectLightbox from "./ProjectLightbox";
 
 type ProjectGalleryProps = {
@@ -23,7 +24,7 @@ const ProjectGallery = ({ images, title }: ProjectGalleryProps) => {
       <div className="masonry-grid">
         {images.map((image, index) => (
           <button key={`${image.src}-${image.caption}`} className="gallery-item" type="button" onClick={() => setCurrentIndex(index)}>
-            <img src={image.src} alt={image.alt} loading="lazy" />
+            <img src={publicAsset(image.src)} alt={image.alt} loading="lazy" />
             <span>{image.caption}</span>
           </button>
         ))}

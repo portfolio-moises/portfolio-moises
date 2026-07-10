@@ -1,10 +1,11 @@
 import SectionTitle from "./SectionTitle";
+import { publicAsset } from "../utils/assets";
 
 const About = () => (
   <section id="sobre" className="about section grid-surface" aria-labelledby="about-title">
     <div className="container about__grid">
       <figure className="about__image">
-        <img src="/images/placeholders/foto-moises-placeholder.svg" alt="Placeholder para fotografia profissional de Moisés Henrique" loading="lazy" />
+        <img src={publicAsset("/images/placeholders/foto-moises-placeholder.svg")} alt="Placeholder para fotografia profissional de Moisés Henrique" loading="lazy" />
       </figure>
       <div className="about__copy">
         <SectionTitle eyebrow="Sobre" title="Quem é o Moisés?" />

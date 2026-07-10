@@ -6,6 +6,7 @@ import SectionTitle from "../components/SectionTitle";
 import SocialLinks from "../components/SocialLinks";
 import { getWhatsAppUrl, siteConfig } from "../config/site";
 import { getNextProject, getProjectBySlug } from "../data/projects";
+import { publicAsset } from "../utils/assets";
 import SEO from "../utils/seo";
 import NotFound from "./NotFound";
 
@@ -27,7 +28,7 @@ const ProjectPage = () => {
     dateCreated: project.year,
     genre: project.category,
     description: project.description,
-    image: project.cover,
+    image: publicAsset(project.cover),
   };
 
   return (
@@ -66,7 +67,7 @@ const ProjectPage = () => {
               </div>
             </div>
             <figure className="project-hero__cover">
-              <img src={project.cover} alt={`Capa do projeto ${project.title}`} loading="eager" />
+              <img src={publicAsset(project.cover)} alt={`Capa do projeto ${project.title}`} loading="eager" />
             </figure>
           </div>
         </section>

@@ -1,6 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { Project } from "../data/projects";
+import { publicAsset } from "../utils/assets";
 
 type ProjectCardProps = {
   project: Project;
@@ -8,7 +9,7 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ project }: ProjectCardProps) => (
   <Link className={`project-card project-card--${project.featuredSize}`} to={`/projetos/${project.slug}`} aria-label={`Ver projeto ${project.title}`}>
-    <img src={project.cover} alt={`Capa do projeto ${project.title}`} loading="lazy" />
+    <img src={publicAsset(project.cover)} alt={`Capa do projeto ${project.title}`} loading="lazy" />
     <div className="project-card__shade" aria-hidden="true" />
     <div className="project-card__content">
       <div>

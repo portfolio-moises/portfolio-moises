@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { siteConfig } from "../config/site";
+import { publicAsset } from "./assets";
 
 type SeoProps = {
   title: string;
@@ -46,7 +47,10 @@ const upsertJsonLd = (data?: Record<string, unknown> | Record<string, unknown>[]
   document.head.appendChild(script);
 };
 
-const toAbsoluteUrl = (pathOrUrl: string) => new URL(pathOrUrl, siteConfig.canonicalUrl).toString();
+const toAbsoluteUrl = (pathOrUrl: string) => {
+  if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
+  return new URL(publicAsset(pathOrUrl), siteConfig.canonicalUrl).toString();
+};
 
 const SEO = ({ title, description, path = "/", image = "/images/placeholders/og-portfolio.svg", structuredData }: SeoProps) => {
   useEffect(() => {

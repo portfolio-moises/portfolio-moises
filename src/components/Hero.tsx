@@ -1,6 +1,7 @@
 import { ArrowDownRight, MessageCircle, MousePointer2, Sparkle } from "lucide-react";
 import { motion } from "framer-motion";
 import { getWhatsAppUrl } from "../config/site";
+import { publicAsset } from "../utils/assets";
 
 const tags = ["Social Media", "Institucional", "Apresentações", "Manipulação de Imagens"];
 const capsules = ["Criativo", "Estratégico", "Proativo"];
@@ -52,7 +53,7 @@ const Hero = () => (
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.12 }}
       >
         <div className="portrait-frame" aria-label="Área preparada para fotografia do designer">
-          <img src="/images/placeholders/foto-moises-placeholder.svg" alt="Placeholder para fotografia recortada de Moisés Henrique" loading="eager" />
+          <img src={publicAsset("/images/placeholders/foto-moises-placeholder.svg")} alt="Placeholder para fotografia recortada de Moisés Henrique" loading="eager" />
           <div className="portrait-frame__grid" aria-hidden="true" />
           <MousePointer2 className="decor decor--cursor" size={34} aria-hidden="true" />
           <Sparkle className="decor decor--sparkle" size={30} aria-hidden="true" />

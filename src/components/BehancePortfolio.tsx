@@ -1,6 +1,7 @@
 import { ArrowUpRight, Grid3X3 } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
 import { portfolio, portfolioCategories } from "../data/portfolio";
+import { publicAsset } from "../utils/assets";
 import ProjectLightbox from "./ProjectLightbox";
 import SectionTitle from "./SectionTitle";
 
@@ -75,7 +76,7 @@ const BehancePortfolio = () => {
               onClick={() => setCurrentIndex(index)}
               aria-label={`Expandir projeto ${item.title}`}
             >
-              <img src={item.src} alt={item.alt} loading="lazy" />
+              <img src={publicAsset(item.src)} alt={item.alt} loading="lazy" />
               <span className="portfolio-piece__overlay">
                 <span>
                   <small>{item.category}</small>
